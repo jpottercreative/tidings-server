@@ -1,15 +1,9 @@
-# bromide-drag v1.0 SERVER
+# tidings v1.0 SERVER
 
-## Welcome to Bromide Drag
+## Welcome to Tidings
 
-***Bromide Drag:*** Characterized by uneven areas of development due to high concentrations of Bromide around sproket holes of film due to lack of agitation. 
 
----
-Let's get agitated.
-
----
-
-### Bromide Drag v1 is a simple photo gallery builder app!
+### Tidings v1 is a simple photo gallery builder app!
 
 This Rails server runs ActiveStorage for file handling, serving files to/from an AWS S3 bucket, and uses JSON Web Tokens (JWT) and Devise for authentication. ActiveModel serializer (and some fun custom end-points) is used for data serialization.
 
@@ -19,9 +13,16 @@ The client is built in React and uses React Router for front end navigation.
 ---
 
 ## Installation
-Fork and clone the repo, `bundle install`, `rails db:create db:migrate` and `rails s` will get the server going.
+Fork and clone the repo. `bundle install` 
+***Secrets!***
+Setup your JWT secret key: `rake secret` and use that secret key in your rails `credentials.yml` file as such:
+```
+devise:
+  jwt_secret_key: <rake secret key>
+```
+If you want to use AWS you'll also need to add your aws user credentials in the same file.  Save and exit out of vim or nano, then run `rails db:create db:migrate` and then `rails s` should get the server running.
 
-Be sure to go grab the CLIENT here: https://github.com/hariseldon27/bromide-drag-client
+Be sure to go grab the CLIENT here:
 
 
 

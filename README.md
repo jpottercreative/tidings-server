@@ -9,6 +9,7 @@ This Rails server runs ActiveStorage for file handling, serving files to/from an
 
 The client is built in React and uses React Router for front end navigation.
 
+n.b. this project was initially named Bromide Drag and there are still remnants of the original name all over the place - jp 4/18/22
 
 ---
 
@@ -22,9 +23,7 @@ devise:
 ```
 If you want to use AWS you'll also need to add your aws user credentials in the same file.  Save and exit out of vim or nano, then run `rails db:create db:migrate` and then `rails s` should get the server running.
 
-Be sure to go grab the CLIENT here:
-
-
+Be sure to go grab the CLIENT here: https://github.com/jpottercreative/tidings-client
 
 ---
 ### What's working:

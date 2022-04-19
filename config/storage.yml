@@ -12,7 +12,7 @@ amazon:
   access_key_id: <%= Rails.application.credentials.dig(:aws, :access_key_id) %>
   secret_access_key: <%= Rails.application.credentials.dig(:aws, :secret_access_key) %>
   region: us-west-2
-  bucket: bdrag-v1-uploads
+  bucket: tidings-uploads-v1
 
 # Remember not to checkin your GCS keyfile to a repository
 # google:

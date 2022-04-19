@@ -5,6 +5,8 @@
 
 # Read more: https://github.com/cyu/rack-cors
 
+# this will need to be updated for deployment obvo
+# note that we explicitely expose the Authentication header - that is where our JWT goes on return
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
     origins "http://localhost:3006"

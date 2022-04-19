@@ -1,4 +1,5 @@
 class ShareController < ApplicationController
+# this fetches our gallery by the (hopefully) random string we create on the FE
 
     def show
         # byebug

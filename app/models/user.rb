@@ -1,5 +1,6 @@
 class User < ApplicationRecord
 
+  # the devise controllers are separate from the user controller
   has_one_attached :avatar
   has_many :galleries  
   devise :database_authenticatable,

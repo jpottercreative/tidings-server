@@ -29,6 +29,7 @@ class UsersController < ApplicationController
             return
         end
     end
+    # this is important - it gets the auth token for the user, and adds it to the headers on return
     def current_token
         request.env['warden-jwt_auth.token']
     end

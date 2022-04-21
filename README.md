@@ -42,7 +42,7 @@ Be sure to go grab the CLIENT here: https://github.com/jpottercreative/tidings-c
 
 >**ActiveStorage::S3:** This works, and it's pretty slick.  Just uploads straight to the specified bucket. No sizing variants yet. If you want to use this make sure you set your `rails credentials` file up with the AWS info.
 
->**Devise Auth:** This works, but not all the elements are implemented. Issues JWT each time user logs in, and adds it to the JWTDenyList after a timeout --confirm this timeout plz jp--.
+>**Devise Auth:** This works, but not all the elements are implemented. Issues JWT each time user logs in, and adds it to the JWTDenyList after a 24 hour timeout.
 
 >**Error Handling:** Not as robust as I'd like, would like but is functional.  Sends enough information to the front end as it can handle and deliver to the user.  Would like to fully implement handling and more custom returns so that the FE handler can be more dynamic.
 

@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   patch '/profile-photo/:id', to: 'users#add_profile_photo'
   
-  # somewhat RESTful
+  # make and show the gallery
   patch '/gallery/:id', to: 'galleries#update'
   get '/gallery/:id', to: 'galleries#show'
   get '/gallery/:id/blocks', to: 'blocks#gallery_blocks'
@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   # for creating new blocks
   post '/new-block/', to: 'blocks#new_block'  
   
-  # explicitly not RESTful
+  # get our shareable galleries
   get '/share/:id', to: 'share#show'
   
 end

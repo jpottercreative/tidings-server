@@ -23,7 +23,7 @@ class UsersController < ApplicationController
     end
     def show_avatar
         if current_user.avatar.attached?
-            host = "http://localhost:3000"
+            host = "https://tidings-server.herokuapp.com"
             return host + rails_blob_path(current_user.avatar, disposition: "attachment")
         else 
             return

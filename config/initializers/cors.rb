@@ -9,7 +9,7 @@
 # note that we explicitely expose the Authentication header - that is where our JWT goes on return
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins: "https://tidings-gallery.herokuapp.com", "https://tidings.jpottercreative.com"
+    origins "https://tidings-gallery.herokuapp.com", "https://tidings.jpottercreative.com"
 
     resource "*",
       headers: :any,
